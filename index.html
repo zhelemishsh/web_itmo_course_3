@@ -5,84 +5,81 @@
     <meta name="keywords" content="автомойка, помыть, машина">
     <meta name="description" content="Удобный агрегатор,позволяющий клиенту и мойке быстрее найти друг друга,
      без необходимости стоять в очередях и совершать звонки.">
+    <link rel="stylesheet" href="css/style.css">
     <title>PomoiCar</title>
 </head>
-<body>
-    <header>
-        <h2>
-            PomoiCar - лучший агрегатор автормоек
+<body class="page-body">
+    <header class="app-bar">
+        <h2 class="app-bar-title">
+            <span><img class="icon-logo" src="images/logo.svg" alt="Pomoi Car logo"></span>
+            <span class="app-name">PomoiCar</span>
         </h2>
     </header>
-    <header>
-        <div id="main_info">
-            <h1>Акватория</h1>
-            <p>Вяземский пер. 5/7</p>
-            <ul>
-                <li>+7 (925) 215-46-25</li>
-                <li>tg: @aquatoria</li>
-            </ul>
+    <div class="wash-page">
+        <header class="wash-title-header">
+            <div class="name-address">
+                <h1 class="name-address__wash-name">Акватория</h1>
+                <p class="name-address__wash-address">Вяземский пер. 5/7</p>
+                <div class="contacts-panel">
+                    <a><img class="contacts-panel__social-network-image" src="images/tg.png" alt="telegram"></a>
+                    <a><img class="contacts-panel__social-network-image" src="images/vk.png" alt="vk"></a>
+                    <p class="contacts-panel__contact">+7 (925) 215-46-25</p>
+                </div>
+            </div>
+            <div class="work-time">
+                <p><strong>пн</strong>: 8:00 - 20:00</p>
+                <p><strong>вт</strong>: 8:00 - 20:00</p>
+                <p><strong>ср</strong>: 8:00 - 20:00</p>
+                <p><strong>чт</strong>: 8:00 - 20:00</p>
+                <p><strong>пт</strong>: 8:00 - 19:00</p>
+                <p><strong>сб</strong>: 12:00 - 20:00</p>
+                <p><strong>вс</strong>: 8:00 - 20:00</p>
+            </div>
+        </header>
+        <div class="main-data-panel">
+            <main class="text-section-unite">
+                <section class="text-section">
+                    <h3 class="text-section__section-header">О нас: </h3>
+                    <p>
+                        Уникальная автомойка в центре Петроградской стороны. Мы предоставляем большой спектр услуг
+                        от чистки дисков до полировки кузова. Готовы браться за самые тяжёлые случаи.
+                        Проверьте качество наших услуг сами!
+                    </p>
+                    <div class="text-section__description-quote">
+                        <q>Рабочим - чистые машины!</q> <sub>В.И. Ленин, 1 съёзд ВКПБ</sub>
+                    </div>
+                </section>
+                <section class="text-section">
+                    <h3 class="text-section__section-header">Наши услуги: </h3>
+                    <ul class="services-list">
+                        <li>
+                            <h4 class="services-list__service-name">2х фазная НАНО - 1200 р</h4>
+                            <p>Мойка+ковры+обезжиреватель+сушка</p>
+                        </li>
+                        <li>
+                            <h4 class="services-list__service-name">2х фазная ЛЮКС - 1400 р</h4>
+                            <p>Мойка+пылесос+стекла+пластик+обезжириватель+чернение резины</p>
+                        </li>
+                        <li>
+                            <h4 class="services-list__service-name">2х фазная СУПЕР ЛЮКС - 2500 р</h4>
+                            <p>Мойка+ковры+стекла+пластик+обезжириватель</p>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+            <nav class="navigation-panel">
+                <p class="navigation-panel__item"><a href="index.html">Главная</a></p>
+                <p class="navigation-panel__item"><a href="index.html">Заказы в ожидании</a></p>
+                <p class="navigation-panel__item"><a href="index.html">Принятые заказы</a></p>
+                <p class="navigation-panel__item"><a href="index.html">История заказов</a></p>
+                <p class="navigation-panel__item"><a href="index.html">Статистика</a></p>
+            </nav>
         </div>
-        <div id="schedule">
-            <p><strong>пн</strong>: 8:00 - 20:00</p>
-            <p><strong>вт</strong>: 8:00 - 20:00</p>
-            <p><strong>ср</strong>: 8:00 - 20:00</p>
-            <p><strong>чт</strong>: 8:00 - 20:00</p>
-            <p><strong>пт</strong>: 8:00 - 19:00</p>
-            <p><strong>сб</strong>: 12:00 - 20:00</p>
-            <p><strong>вс</strong>: 8:00 - 20:00</p>
-        </div>
-    </header>
-    <nav>
-        <p><a href="index.html">Главная</a></p>
-        <p><a href="index.html">Заказы в ожидании</a></p>
-        <p><a href="index.html">Принятые заказы</a></p>
-        <p><a href="index.html">История заказов</a></p>
-        <p><a href="index.html">Статистика</a></p>
-    </nav>
-    <main>
-        <section>
-            <h3>О нас: </h3>
-            <p>
-                Уникальная автомойка в центре Петроградской стороны. Мы предоставляем большой спектр услуг
-                от чистки дисков до полировки кузова. Готовы браться за самые тяжёлые случаи.
-                Проверьте качество наших услуг сами!
-            </p>
-            <q>Рабочим - чистые машины!</q> <sub>В.И. Ленин, 1 съёзд ВКПБ</sub>
-        </section>
-        <section>
-            <h3>Наши услуги: </h3>
-            <ul>
-                <li>
-                    <h4>2х фазная НАНО - 1200 р</h4>
-                    <p>Мойка+ковры+обезжиреватель+сушка</p>
-                </li>
-                <li>
-                    <h4>2х фазная ЛЮКС - 1400 р</h4>
-                    <p>Мойка+пылесос+стекла+пластик+обезжириватель+чернение резины</p>
-                </li>
-                <li>
-                    <h4>2х фазная СУПЕР ЛЮКС - 2500 р</h4>
-                    <p>Мойка+ковры+стекла+пластик+обезжириватель</p>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <pre>
-             _                       _
-            ( )                     (_ )
-           _| |   __   _   _    __   | |    _    _ _      __   _ __   ___
-         /'_` | /'__`\( ) ( ) /'__`\ | |  /'_`\ ( '_`\  /'__`\( '__)/',__)
-        ( (_| |(  ___/| \_/ |(  ___/ | | ( (_) )| (_) )(  ___/| |   \__, \
-        `\__,_)`\____)`\___/'`\____)(___)`\___/'| ,__/'`\____)(_)   (____/
-                                                | |
-                                                (_)
-        </pre>
-        Контакты команды разработки
-        <ul>
-            <li>+7 (927) 433-44-59</li>
-            <li>developers@mail.ru</li>
-        </ul>
+    </div>
+    <footer class="page-footer">
+        <p>Контакты команды разработки</p>
+        <p>+7 (927) 433-44-59</p>
+        <p>developers@mail.ru</p>
     </footer>
 </body>
 </html>
