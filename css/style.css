@@ -4,6 +4,10 @@ html {
     height: 100%;
 }
 
+button {
+    font-family: 'Comfortaa', arial, serif;
+}
+
 .page-body {
     min-height: 100%;
     display: flex;
@@ -20,6 +24,7 @@ p {
 }
 
 .text-section-unite {
+    flex: 1;
     display: flex;
     flex-flow: column;
 }
@@ -151,26 +156,30 @@ p {
     width: 100%;
 }
 
+.navigation-panel>a {
+    text-decoration: none;
+}
+
 .navigation-panel__item {
     padding: 5px;
     border-bottom: solid rgba(204, 197, 185, 0.4) 1px;
     font-size: 13px;
+    color: rgb(240, 134, 91);
 }
 
-.navigation-panel__item>a {
+.navigation-panel__item {
     text-decoration: none;
 }
 
-.navigation-panel__item>a:hover {
+.navigation-panel__item:hover {
     color: rgb(235, 94, 40);
 }
 
-.navigation-panel__item>a:link {
-    color: rgb(240, 134, 91);
-}
-
-.navigation-panel__item>a:visited {
-    color: rgb(240, 134, 91);
+#selected-page {
+    background-color: rgba(204, 197, 185, 0.2);
+    box-shadow: 0 0 5px 2px rgba(204, 197, 185, 0.2);
+    color: rgb(235, 94, 40);
+    border-radius: 5px;
 }
 
 .name-address__wash-address {
@@ -216,7 +225,7 @@ p {
 }
 
 .navigation-panel {
-    width: 360px;
+    width: 150px;
     margin: 10px;
     padding: 10px;
     border-radius: 15px;
@@ -235,4 +244,81 @@ p {
 .main-data-panel {
     display: flex;
     flex-flow: row;
+}
+
+.load-time {
+    font-weight: bold;
+}
+
+.all-orders-panel {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.order-panel {
+    border-radius: 15px;
+    border: dashed rgb(64, 61, 57) 2px;
+    height: 150px;
+    width: 230px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+}
+
+.order-buttons-panel {
+    display: flex;
+    flex-flow: row;
+}
+
+.order-button {
+    flex: 1;
+    border-radius: 10px;
+    padding: 7px;
+    margin: 5px;
+    background-color: rgb(240, 134, 91);
+    text-align: center;
+    border: none;
+}
+
+.order-button:hover {
+    background-color: rgb(235, 94, 40);
+}
+
+.order-data {
+    flex: 1;
+    display: flex;
+    flex-flow: row;
+}
+
+.order-account-image {
+    width: 80px;
+    border-radius: 10px;
+    margin: 5px;
+    border: dashed rgb(64, 61, 57) 2px;
+    background-color: rgb(204, 197, 185);
+}
+
+.order-account-image>img {
+    width: 100%;
+    height: 100%;
+}
+
+.order-account-data {
+    font-size: 16px;
+    flex: 1;
+    margin: 5px;
+    display: flex;
+    flex-flow: column;
+}
+
+.order-account-name {
+    text-decoration: underline rgb(235, 94, 40);
+}
+
+.order-services {
+    padding-left: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }

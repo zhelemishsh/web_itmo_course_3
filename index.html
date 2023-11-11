@@ -7,6 +7,8 @@
      без необходимости стоять в очередях и совершать звонки.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/load-time-listener.js"></script>
+    <script src="js/opened-page.js"></script>
     <title>PomoiCar</title>
 </head>
 <body class="page-body">
@@ -67,11 +69,9 @@
                 </section>
             </main>
             <nav class="navigation-panel">
-                <p class="navigation-panel__item"><a href="index.html">Главная</a></p>
-                <p class="navigation-panel__item"><a href="index.html">Заказы в ожидании</a></p>
-                <p class="navigation-panel__item"><a href="index.html">Принятые заказы</a></p>
-                <p class="navigation-panel__item"><a href="index.html">История заказов</a></p>
-                <p class="navigation-panel__item"><a href="index.html">Статистика</a></p>
+                <a href="/beb/index.html"><p class="navigation-panel__item">Главная</p></a>
+                <a href="/beb/pending-orders.html"><p class="navigation-panel__item">Заказы в ожидании</p></a>
+                <a href="/beb/accepted-orders.html"><p class="navigation-panel__item">Принятые заказы</p></a>
             </nav>
         </div>
     </div>
@@ -79,6 +79,7 @@
         <p>Контакты команды разработки</p>
         <p>+7 (927) 433-44-59</p>
         <p>developers@mail.ru</p>
+        <p id="load-time" class="load-time">Время загрузки: </p>
     </footer>
 </body>
 </html>
