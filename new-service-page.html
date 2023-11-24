@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="автомойка, помыть, машина">
+    <meta name="description" content="Удобный агрегатор,позволяющий клиенту и мойке быстрее найти друг друга,
+     без необходимости стоять в очередях и совершать звонки.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/load-time-listener.js"></script>
+    <script src="js/create-service.js" defer></script>
+    <title>PomoiCar</title>
+</head>
+<body class="page-body">
+<header class="app-bar">
+    <a><img class="menu-button" src="images/menu.svg" alt="Pomoi Car logo"></a>
+    <h2 class="app-bar-title">
+        <span><img class="icon-logo" src="images/logo.svg" alt="Pomoi Car logo"></span>
+        <span class="app-name">PomoiCar</span>
+    </h2>
+</header>
+<div class="wash-page">
+    <div class="services-form-main">
+        <form class="new-service-form" id="new-service-form">
+            <h3 class="text-section__section-header">Параметры услуги</h3>
+            <div class="input-data">
+                <input class="form-input" id="name" type="text" required>
+                <label class="default-text" for="name">Название</label>
+            </div>
+            <div class="input-data">
+                <input class="form-input" id="price" type="number" required>
+                <label for="price">Цена</label>
+            </div>
+            <div class="input-data">
+                <input class="form-input" id="time" type="number" required>
+                <label for="time">Время, мин</label>
+            </div>
+            <div class="input-data">
+                <input class="form-input" id="description" type="text" required>
+                <label for="description">Описание</label>
+            </div>
+            <button class="add-service-button">
+                <img src="images/add.svg" alt="add">
+            </button>
+        </form>
+        <div class="added-services-text-section">
+            <h3 class="text-section__section-header">Добавленные услуги</h3>
+            <ul class="services-list" id="added-services"></ul>
+        </div>
+    </div>
+</div>
+<footer class="page-footer">
+    <p>Контакты команды разработки</p>
+    <p>+7 (927) 433-44-59</p>
+    <p>developers@mail.ru</p>
+    <p id="load-time" class="load-time">Время загрузки: </p>
+</footer>
+</body>
+</html>
