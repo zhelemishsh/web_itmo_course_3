@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/load-time-listener.js"></script>
     <script src="js/opened-page.js"></script>
+    <script src="js/fetch-data.js"></script>
     <title>PomoiCar</title>
 </head>
 <body class="page-body">
@@ -21,107 +22,11 @@
 </header>
 <div class="wash-page">
     <div class="main-data-panel">
-        <main class="all-orders-panel">
-            <div class="order-panel">
-                <div class="order-data">
-                    <div class="order-account-image">
-                        <img src="images/person.svg" alt="placeholder">
-                    </div>
-                    <div class="order-account-data">
-                        <p class="order-account-name">Имя Фамилия</p>
-                        <ul class="order-services">
-                            <li>Услуга 1</li>
-                            <li>Услуга 2</li>
-                            <li>Услуга 3</li>
-                            <li>Услуга 4</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="order-buttons-panel">
-                    <button class="order-button">Принять</button>
-                    <button class="order-button">Отказать</button>
-                </div>
+        <main class="all-orders-panel" id="orders-list">
+            <div id="orders-preloader-container">
+                <div class="preloader"></div>
             </div>
-            <div class="order-panel">
-                <div class="order-data">
-                    <div class="order-account-image">
-                        <img src="images/person.svg" alt="placeholder">
-                    </div>
-                    <div class="order-account-data">
-                        <p class="order-account-name">Имя Фамилия</p>
-                        <ul class="order-services">
-                            <li>Услуга 1</li>
-                            <li>Услуга 2</li>
-                            <li>Услуга 3</li>
-                            <li>Услуга 4</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="order-buttons-panel">
-                    <button class="order-button">Принять</button>
-                    <button class="order-button">Отказать</button>
-                </div>
-            </div>
-            <div class="order-panel">
-                <div class="order-data">
-                    <div class="order-account-image">
-                        <img src="images/person.svg" alt="placeholder">
-                    </div>
-                    <div class="order-account-data">
-                        <p class="order-account-name">Имя Фамилия</p>
-                        <ul class="order-services">
-                            <li>Услуга 1</li>
-                            <li>Услуга 2</li>
-                            <li>Услуга 3</li>
-                            <li>Услуга 4</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="order-buttons-panel">
-                    <button class="order-button">Принять</button>
-                    <button class="order-button">Отказать</button>
-                </div>
-            </div>
-            <div class="order-panel">
-                <div class="order-data">
-                    <div class="order-account-image">
-                        <img src="images/person.svg" alt="placeholder">
-                    </div>
-                    <div class="order-account-data">
-                        <p class="order-account-name">Имя Фамилия</p>
-                        <ul class="order-services">
-                            <li>Услуга 1</li>
-                            <li>Услуга 2</li>
-                            <li>Услуга 3</li>
-                            <li>Услуга 4</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="order-buttons-panel">
-                    <button class="order-button">Принять</button>
-                    <button class="order-button">Отказать</button>
-                </div>
-            </div>
-            <div class="order-panel">
-                <div class="order-data">
-                    <div class="order-account-image">
-                        <img src="images/person.svg" alt="placeholder">
-                    </div>
-                    <div class="order-account-data">
-                        <p class="order-account-name">Имя Фамилия</p>
-                        <ul class="order-services">
-                            <li>Услуга 1</li>
-                            <li>Услуга 2</li>
-                            <li>Услуга 3</li>
-                            <li>Услуга 4</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="order-buttons-panel">
-                    <button class="order-button">Принять</button>
-                    <button class="order-button">Отказать</button>
-                </div>
-            </div>
+<!--            load from api-->
         </main>
         <nav class="navigation-panel">
             <a href="index.html"><p class="navigation-panel__item">Главная</p></a>
