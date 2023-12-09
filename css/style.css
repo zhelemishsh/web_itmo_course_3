@@ -404,3 +404,65 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+.rating-row {
+    display: flex;
+    flex-flow: row;
+}
+
+.rating-panel {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    line-height: 23px;
+    border: dashed rgb(64, 61, 57) 2px;
+}
+
+.comments-panel {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100px;
+}
+
+.comment-panel {
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    width: 70%;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+}
+
+.comment-author-name {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.comment-text {
+    font-size: 13px;
+}
+
+.service-rating {
+    margin-top: auto;
+    margin-left: auto;
+    color: rgb(235, 94, 40);
+}
+
+.rating-value {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.rating-star-value {
+    display: flex;
+    margin-left: 16px;
+    flex-flow: row;
+    align-items: center;
+}

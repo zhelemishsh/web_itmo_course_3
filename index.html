@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/load-time-listener.js"></script>
     <script src="js/opened-page.js"></script>
+    <!-- Подключаем стили сторонней библиотеки -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Подключаем скрипт сторонней библиотеки -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <title>PomoiCar</title>
 </head>
 <body class="page-body">
@@ -70,6 +74,36 @@
                         </li>
                     </ul>
                 </section>
+                <div class="rating-row">
+                    <div class="rating-panel">
+                        <h3 class="text-section__section-header">Рейтинг мойки: </h3>
+                        <div class="rating-star-value">
+                            <h1 class="rating-value">9.2</h1>
+                            <img src="images/star.svg" alt="rating">
+                        </div>
+                    </div>
+                    <div class="comments-panel">
+                        <!-- Используем слайдер из библиотеки -->
+                        <!-- wrapAround отвечает за бесконечную прокрутку -->
+                        <div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+                            <div class="comment-panel">
+                                <p class="comment-author-name">Довольный Юзер 1</p>
+                                <p class="comment-text">Хорошая мойка, остался доволен!11!! Всё качественно, без вопросов!!</p>
+                                <p class="service-rating">10/10</p>
+                            </div>
+                            <div class="comment-panel">
+                                <p class="comment-author-name">Довольный Юзер 2</p>
+                                <p class="comment-text">Хорошая мойка, остался доволен!11!! Всё качественно, без вопросов!!</p>
+                                <p class="service-rating">10/10</p>
+                            </div>
+                            <div class="comment-panel">
+                                <p class="comment-author-name">Довольный Юзер 3</p>
+                                <p class="comment-text">Хорошая мойка, остался доволен!11!! Всё качественно, без вопросов!!</p>
+                                <p class="service-rating">10/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
             <nav class="navigation-panel">
                 <a href="index.html"><p class="navigation-panel__item">Главная</p></a>
